@@ -10,6 +10,11 @@ Since our signal is going short high beta stocks and long low beta stocks, we us
 
 '''
 
+import polars as pl 
+
+data = pl.DataFrame()
+
+# Start of Signal Code
 df = (
     data.lazy()
     .sort(["barrid", "date"])
